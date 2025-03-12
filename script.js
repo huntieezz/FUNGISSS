@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Handle chart image hover effects only
     const chartImage = document.getElementById('chartImage');
     
     if (chartImage) {
-        // Define a custom pulse class in CSS instead of using animate.css
         chartImage.addEventListener('mouseover', function() {
             this.classList.add('custom-pulse');
         });
@@ -13,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
@@ -44,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav a, .nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -60,5 +56,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__fadeInUp');
+                const progressBar = entry.target.querySelector('.skill-progress');
+                if (progressBar) {
+                    const width = progressBar.style.width;
+                    progressBar.style.width = '0';
+                    setTimeout(() => {
+                        progressBar.style.width = width;
+                    }, 300);
+                }
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.skill-card').forEach(card => {
+        observer.observe(card);
+    });
+
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
     });
 });

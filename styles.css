@@ -265,13 +265,11 @@ nav ul li a.active::after {
     box-shadow: 0 0 10px var(--glow-color);
 }
 
-/* Add this to your styles.css file */
-
 .custom-pulse {
     animation: customPulse 2s ease-in-out infinite;
-  }
+}
   
-  @keyframes customPulse {
+@keyframes customPulse {
     0% {
       transform: scale(1);
     }
@@ -281,7 +279,7 @@ nav ul li a.active::after {
     100% {
       transform: scale(1);
     }
-  }
+}
 
 section {
     padding: 5rem 0;

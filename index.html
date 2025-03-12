@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayTrades - Trading Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <span>Jaytrades</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="hero">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h1>Day Trader</h1>
+                <p>I develop trading strategies that work in all market conditions. Specialized in analyzing market microstructure and order flow.</p>
+                <div class="hero-buttons">
+                    <a href="#skills" class="btn glow-button nav-link">Store</a>
+                    <a href="#contact" class="btn outline nav-link">Trades</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://files.catbox.moe/99jh9e.webp" alt="Trading Chart" id="chartImage">
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p>Huntiez</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Market Structure Analysis</h3>
+                    <p>Identifying key levels, market phases, and overall direction to understand the bigger picture before entering trades.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <h3>Order Flow Trading</h3>
+                    <p>Reading market depth and time & sales to understand institutional activity and make informed trading decisions.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Management</h3>
+                    <p>Implementing proper position sizing, stop placement, and risk-reward assessment to protect capital and maximize returns.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Trading Psychology</h3>
+                    <p>Mastering emotional control and developing the mental discipline required for consistent profitable trading.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info animate__animated animate__fadeInLeft">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>jay@jaytrades.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <p>www.jaytrades.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-discord"></i>
+                        <p>Discord: meinnit17</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Response Time: Within 24 hours</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jtrades18/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@Jaytrades." target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.gg/UaghcggW6c" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form animate__animated animate__fadeInRight">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn glow-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 JayTrades. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
